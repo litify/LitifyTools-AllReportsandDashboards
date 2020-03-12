@@ -485,11 +485,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>IsVisibleInSelfService</field>
-            <table>litify_pm__Intake__c.Activities</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>CallDurationInSeconds</field>
             <table>litify_pm__Intake__c.Activities</table>
         </columns>
