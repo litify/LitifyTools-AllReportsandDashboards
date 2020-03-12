@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <fields>
+        <fullName>Total_Converted_Leads__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(NOT(ISBLANK( litify_pm__Converted_Date__c ))=True,1,null)</formula>
+        <label># Converted</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Questionnaires__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(NOT(ISBLANK( litify_pm__Questionnaire_End_Date__c ))=True,1,null)</formula>
+        <label># Questionnaires</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Retainer_Sent__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(NOT(ISBLANK(litify_pm__Retainer_Agreement_Sent_Date__c))=True,1,null)</formula>
+        <label># Retainer Sent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Under_Review__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(NOT(ISBLANK(litify_pm__Under_Review_Date__c))=True,1,null)</formula>
+        <label># Under Review</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>litify_tso_My_Intake__c</fullName>
+        <description>Set to True if the Logged in User is the same as the Intake Owner. Additional user lookups can be added as needed.</description>
+        <externalId>false</externalId>
+        <formula>IF(OwnerId = $User.Id, True, False)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Set to True if the Logged in User is the same as the Intake Owner. Additional user lookups can be added as needed.</inlineHelpText>
+        <label>My Intake</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>
